@@ -4,18 +4,99 @@ body {
     margin: 0;
     padding: 0;
 }
+video{
+   position: fixed;
+   left: 0;
+   right: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
 
 header {
-    background-color: lightgray;
+    color: white;
     padding: 20px;
     text-align: center;
 }
 
+header h1{
+    font-family: sans-serif;
+    font-size: 4rem;
+}
+
+header p {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 40px;
+
+}
+
+/* Responsive: below 700px */
+@media screen and (max-width: 700px) {
+    #nav-links {
+        display: none; /* hide links initially */
+        flex-direction: column;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    #nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block; /* show hamburger */
+    }
+}
+.sec{
+    overflow: hidden;
+    margin: auto;
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: white;
+    backdrop-filter: blur(8px);
+    border: 2px solid white;
+}
+
+
+#projects{
+    height: 70vh;
+    width: 80%;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+
+.title{
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: right;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: none;
+    backdrop-filter: blur(10px);
+}
+
 nav ul {
     list-style: none;
+    color: black;
     margin: 0;
     padding: 10px;
-    background: #222;
     text-align: center;
 }
 
@@ -25,14 +106,16 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
     font-size: 16px;
 }
 
-/* Sections */
+
 section {
     padding: 20px;
+    background-color: white;
+    margin: 40px;
+    border-radius: 20px;
 }
 
 /* Contact form */
@@ -48,6 +131,112 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+
+.project-title {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+
+.grid-proj {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: transparent;
+}
+
+.pro {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 15px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+}
+
+.pro img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.pro .project-title {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.pro .project-disc {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.visit-button {
+    padding: 8px 15px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+/* Contact Section Wrapper */
+#contact {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 12px;
+    color: white;
+}
+
+/* Contact Title */
+#contact .title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Layout */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input + Textarea */
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+
+/* Submit Button */
+#contact button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 
 /* Footer */
 footer {

@@ -8,14 +8,23 @@
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+     <video  autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+             <source src="background.mp4" type="video/ogg">
+             Your browser does not support the video tag.
+        </video>
+<!-- Navigation -->
+<nav class="nav">
+    <div class="nav-brand">HY</div> <!-- optional brand/logo -->
+    <div class="hamburger" id="hamburger">&#9776;</div> <!-- hamburger icon -->
+    <ul id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<br>
+
 
     <header>
         <h1>Sagar shah</h1>
@@ -24,20 +33,45 @@
 
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, I am sagar ....</p>
+    <section class="sec" id="about">
+        <div>
+        <h2 class="title">About Me</h2>
+        <p>Hello, I am sagar I bu.ild things for the web—simple, fast, and clean. I focus on backend development with Django and craft responsive interfaces using Tailwind. I enjoy solving real problems and turning ideas into actual shipped features..</p>
+        </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Portfoli website </p>
+    <h2 class="project-title">My Projects</h2>
+    <section class="grid-proj" id="projects">
+        <div class="pro">
+            <img src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg">
+            <p class="project-title">proj1</p>
+            <p class="project-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodor </p>
+            <button class="visit-button">visit project</button>
+        </div>
+        <div class="pro">
+            <img src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg">
+            <p class="project-title">proj2</p>
+            <p class="project-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodor</p>
+            <button class="visit-button">visit project</button>
+        </div>
+        <div class="pro">
+            <img src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg">
+            <p class="project-title">proj3</p>
+            <p class="project-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodor</p>
+            <button class="visit-button">visit project</button>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
+        <h2 class="title">Contact Me</h2>
 
         <!-- Simple Contact Form -->
         <form action="#" method="post">
@@ -58,6 +92,15 @@
     <footer>
         <p>@ 2025 My Portfolio</p>
     </footer>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+</script>
 
 </body>
 </html>
