@@ -1,0 +1,40 @@
+{
+  "movies": [
+    {
+      "id": "0ea1",
+      "title": "Inception",
+      "genre": "",
+      "year": 2010
+    },
+    {
+      "id": "d15b",
+      "title": "sagar",
+      "genre": "",
+      "year": 2026
+    },
+    {
+      "id": "752c",
+      "title": "inceptionnnn",
+      "genre": "",
+      "year": 44
+    },
+    {
+      "id": "6fc2",
+      "title": "apple",
+      "genre": "",
+      "year": 12
+    },
+    {
+      "id": "8c1b",
+      "title": "aaa",
+      "genre": "s",
+      "year": 755
+    },
+    {
+      "id": "98b5",
+      "title": "jhgfds",
+      "genre": "gfd",
+      "year": 52
+    }
+  ]
+}
