@@ -1,106 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-
-     <video  autoplay muted loop>
-            <source src="background.mp4" type="video/mp4">
-             <source src="background.mp4" type="video/ogg">
-             Your browser does not support the video tag.
-        </video>
-<!-- Navigation -->
-<nav class="nav">
-    <div class="nav-brand">HY</div> <!-- optional brand/logo -->
-    <div class="hamburger" id="hamburger">&#9776;</div> <!-- hamburger icon -->
-    <ul id="nav-links">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <video autoplay muted loop>
+      <source src="/background.mp4" type="video/mp4" />
+      <source src="/background.mp4" type="video/ogg" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-brand">HY</div>
+      <!-- optional brand/logo -->
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <!-- hamburger icon -->
+      <ul id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<br>
-
+      </ul>
+    </nav>
+    <br />
 
     <header>
-        <h1>Sagar shah</h1>
-        <p>Welcome to my website!</p>
+      <h1>Sagar shah</h1>
+      <p>Welcome to my website!</p>
     </header>
-
 
     <!-- About Section -->
     <section class="sec" id="about">
-        <div>
+      <div>
         <h2 class="title">About Me</h2>
-        <p>Hello, I am sagar I bu.ild things for the web—simple, fast, and clean. I focus on backend development with Django and craft responsive interfaces using Tailwind. I enjoy solving real problems and turning ideas into actual shipped features..</p>
-        </div>
+        <p>
+          Hello, I am sagar I bu.ild things for the web—simple, fast, and clean.
+          I focus on backend development with Django and craft responsive
+          interfaces using Tailwind. I enjoy solving real problems and turning
+          ideas into actual shipped features..
+        </p>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <h2 class="project-title">My Projects</h2>
     <section class="grid-proj" id="projects">
-        <div class="pro">
-            <img src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg">
-            <p class="project-title">proj1</p>
-            <p class="project-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodor </p>
-            <button class="visit-button">visit project</button>
-        </div>
-        <div class="pro">
-            <img src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg">
-            <p class="project-title">proj2</p>
-            <p class="project-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodor</p>
-            <button class="visit-button">visit project</button>
-        </div>
-        <div class="pro">
-            <img src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg">
-            <p class="project-title">proj3</p>
-            <p class="project-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodor</p>
-            <button class="visit-button">visit project</button>
-        </div>
+      <div class="pro">
+        <img
+          src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg"
+        />
+        <p class="project-title">proj1</p>
+        <p class="project-disc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodor
+        </p>
+        <button class="visit-button">visit project</button>
+      </div>
+      <div class="pro">
+        <img
+          src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg"
+        />
+        <p class="project-title">proj2</p>
+        <p class="project-disc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodor
+        </p>
+        <button class="visit-button">visit project</button>
+      </div>
+      <div class="pro">
+        <img
+          src="https://dce.harvard.edu/wp-content/uploads/sites/8/2024/07/tech.jpg"
+        />
+        <p class="project-title">proj3</p>
+        <p class="project-disc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodor
+        </p>
+        <button class="visit-button">visit project</button>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2 class="title">Contact Me</h2>
+      <h2 class="title">Contact Me</h2>
 
-        <!-- Simple Contact Form -->
-        <form action="#" method="post">
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required /><br /><br />
+      <!-- Simple Contact Form -->
+      <form action="#" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
 
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
 
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br /><br />
 
-            <button type="submit">Submit</button>
-        </form>
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>@ 2025 My Portfolio</p>
+      <p>@ 2025 My Portfolio</p>
     </footer>
 
-<script>
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
-</script>
-
-</body>
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
 </html>
