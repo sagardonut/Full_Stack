@@ -1,0 +1,24 @@
+{
+    "users": [
+        {
+            "username": "johndoe",
+            "email": "dgddh@fjf.cfjf",
+            "password": "hashed_password_123"
+        }
+    ],
+    "0": {
+        "username": "admin",
+        "email": "np03cs4s250093@heraldcollege.edu.np",
+        "password": "123456789"
+    },
+    "1": {
+        "username": "admin",
+        "email": "np03cs4s250093@heraldcollege.edu.np",
+        "password": "123456789"
+    },
+    "2": {
+        "username": "RRRR",
+        "email": "np@college.edu.np",
+        "password": "123456789"
+    }
+}
